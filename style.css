@@ -43,6 +43,8 @@ button {
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+    transition: all 0.1s ease;
 
 }
 
@@ -59,6 +61,16 @@ button:hover {
     background-color: #429107;
     opacity: 0.8;
 }
+
+button:active {
+    background-color: #0056b3;
+    /* Cor mais escura */
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra interna */
+    transform: translateY(2px);
+    /* Afunda ligeiramente */
+}
+
 
 select,
 input {
@@ -105,7 +117,8 @@ section {
 
 }
 
-.currency-value, .currency-value-to-convert {
+.currency-value,
+.currency-value-to-convert {
     color: #555;
     font-family: Roboto;
     font-size: 20px;
